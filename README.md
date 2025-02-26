@@ -1,10 +1,8 @@
 ## Project Ink and Pen Frontend
 
-#### Example:
-
 Ink and Pen Frontend
 
-An social media/art sharing platform built with React, Typescript, and CSS.
+A social media/art sharing platform built with React, Typescript, and CSS.
 UI/UX work done by me
 
 ## Project Status
