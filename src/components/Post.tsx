@@ -1,20 +1,15 @@
 import React from "react";
+import PostObject from "../entities/PostObject";
 
-interface PostObject {
-  id: number;
-  //title: string;
-  //userId: number;
-  //tips: number;
-  //likes: number;
-  imageUrl: string;
-  //createdDate: string;
+interface PostObjectProp {
+  postObject: PostObject;
 }
 
-const Post: React.FC<PostObject> = ({ id, imageUrl }) => {
+const Post: React.FC<PostObjectProp> = ({ postObject }) => {
   return (
     <>
-      <div>{id}</div>
-      <img src={imageUrl} />
+      <div>{postObject.id}</div>
+      <img src={postObject.imageUrl} />
     </>
   );
 };
