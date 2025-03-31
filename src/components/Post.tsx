@@ -8,8 +8,14 @@ interface PostObjectProp {
 const Post: React.FC<PostObjectProp> = ({ postObject }) => {
   return (
     <>
-      <div>{postObject.id}</div>
-      <img src={postObject.imageUrl} />
+      <div className="flex flex-col items-center w-36 h-36 border-4 border-indigo-500">
+        <h1>{postObject.id}</h1>
+        <img src={postObject.imageUrl} className="object-contain" />
+        <div className="flex justify-between w-100">
+          <div>{postObject.tips}</div>
+          <div>{postObject.likes}</div>
+        </div>
+      </div>
     </>
   );
 };
