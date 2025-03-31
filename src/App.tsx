@@ -1,10 +1,11 @@
 import "./App.css";
+import Post from "./components/Post";
 import Landing from "./Landing";
 
 function App() {
   return (
     <>
-      <Landing />
+      <Post imageUrl="huh" id={1} />
     </>
   );
 }
